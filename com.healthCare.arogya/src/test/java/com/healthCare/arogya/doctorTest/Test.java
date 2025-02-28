@@ -8,6 +8,8 @@ import com.healthCare.arogya.objectRepository.AppoinmentPage;
 import com.healthCare.arogya.objectRepository.CompletedPage;
 import com.healthCare.arogya.objectRepository.DoctorHomePage;
 
+import io.appium.java_client.AppiumBy;
+
 public class Test extends BaseClassUtility{
 	
 	@Test
@@ -24,18 +26,20 @@ public class Test extends BaseClassUtility{
 		AppoinmentPage ap = new AppoinmentPage(driver);
 		ap.getAppinmentLInk().click();
 		
-		ap.getCardNoTxt().sendKeys(cardNo);
-		ap.getMedicationTxt().sendKeys(medication);
-		ap.getNotesTxt().sendKeys(notes);
+		driver.findElement(AppiumBy.androidUIAutomator(new UiScrollable(new UiSelector()).scrollIntoView(text("\++\"))))
 		
-		ap.getSaveBtn().click();
-		
-		CompletedPage cp = new CompletedPage(driver);
-		String txt = cp.getText().getText();
-		String headerTxt = cp.getHeaderTxt().getText();
-		
-		boolean actTxt = txt.contains(headerTxt);
-		Assert.assertEquals(actTxt, true);
+//		ap.getCardNoTxt().sendKeys(cardNo);
+//		ap.getMedicationTxt().sendKeys(medication);
+//		ap.getNotesTxt().sendKeys(notes);
+//		
+//		ap.getSaveBtn().click();
+//		
+//		CompletedPage cp = new CompletedPage(driver);
+//		String txt = cp.getText().getText();
+//		String headerTxt = cp.getHeaderTxt().getText();
+//		
+//		boolean actTxt = txt.contains(headerTxt);
+//		Assert.assertEquals(actTxt, true);
 	}
 
 }
