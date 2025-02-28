@@ -1,4 +1,4 @@
-package com.healthCare.arogyaTest;
+package com.healthCare.arogya.doctorTest;
 
 import org.testng.annotations.Test;
 

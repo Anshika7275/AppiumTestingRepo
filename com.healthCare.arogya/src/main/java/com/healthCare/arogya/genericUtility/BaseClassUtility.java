@@ -97,12 +97,12 @@ public class BaseClassUtility {
 //		RegisterPage rp = new RegisterPage(driver);
 //		rp.registerToApp(USERNAME, EMAIL, PASSWORD, CPASSWORD);
 		
-		String LOGINEMAIL = elib.getDatafromExcelfle("Login", 1, 1);
-		String LOGINPASSWORD = elib.getDatafromExcelfle("Login", 1, 2);
-		
-		LoginPage lp = new LoginPage(driver);
-		lp.loginToApp(LOGINEMAIL, LOGINPASSWORD);
-		System.out.println("Successfully login to application!");
+//		String LOGINEMAIL = elib.getDatafromExcelfle("Login", 1, 1);
+//		String LOGINPASSWORD = elib.getDatafromExcelfle("Login", 1, 2);
+//		
+//		LoginPage lp = new LoginPage(driver);
+//		lp.loginToApp(LOGINEMAIL, LOGINPASSWORD);
+//		System.out.println("Successfully login to application!");
 	}
 	
 	@AfterMethod

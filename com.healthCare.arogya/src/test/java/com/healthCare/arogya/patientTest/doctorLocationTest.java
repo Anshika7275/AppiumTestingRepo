@@ -1,4 +1,4 @@
-package com.healthCare.arogyaTest;
+package com.healthCare.arogya.patientTest;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -12,7 +12,7 @@ import com.healthCare.arogya.objectRepository.HomePage;
 import com.healthCare.arogya.objectRepository.LocationPage;
 import com.healthCare.arogya.objectRepository.RemediesIconPage;
 
-public class PersonalizedRecommendationsTest extends BaseClassUtility{
+public class doctorLocationTest extends BaseClassUtility{
 	
 	@Test
 	public void personalizedRecommendationsTest()
