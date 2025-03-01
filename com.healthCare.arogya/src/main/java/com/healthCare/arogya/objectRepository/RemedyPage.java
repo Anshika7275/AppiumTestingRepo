@@ -22,6 +22,7 @@ public class RemedyPage extends BaseClassUtility{
 	}
 	
 	@AndroidFindBy(id = "com.example.ayurveda:id/addtocart")
+	                    
 	private WebElement addtocartBtn;
 	
 	public AppiumDriver getDriver() {

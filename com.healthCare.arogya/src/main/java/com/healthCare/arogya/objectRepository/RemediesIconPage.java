@@ -64,4 +64,19 @@ public class RemediesIconPage {
 	public WebElement getAddToCartBtn() {
 		return addToCartBtn;
 	}
+	
+	@AndroidFindBy(id = "com.example.ayurveda:id/herbsbtn")
+	private WebElement herbsOption;
+	
+	@AndroidFindBy(id = "com.example.ayurveda:id/addcartbtn")
+	private WebElement herbsAddToCartOption;
+	
+	public WebElement getHerbsOption() {
+		return herbsOption;
+	}
+
+	public WebElement getHerbsAddToCartOption() {
+		return herbsAddToCartOption;
+	}
+	
 }

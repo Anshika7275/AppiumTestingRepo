@@ -1,4 +1,4 @@
-package com.healthCare.arogyaTest;
+package com.healthCare.arogya.doctorTest;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -60,11 +60,14 @@ public class DoctorAppoinmentTest extends BaseClassUtility{
 	}
 	
 	@Test
-	public void checkPatientAppoinment()
+	public void checkPatientAppoinment() throws Throwable
 	{
+		String email = elib.getDatafromExcelfle("DoctorLogin", 1, 2);
+		String password = elib.getDatafromExcelfle("DoctorLogin", 1, 5);
+		
 		DoctorLoginPage dlp = new DoctorLoginPage(driver);
-		dlp.getDocEmailTxt().sendKeys("Vinay@gmail.com");
-		dlp.getDocPasswordTxt().sendKeys("123456");
+		dlp.getDocEmailTxt().sendKeys(email);
+		dlp.getDocPasswordTxt().sendKeys(password);
 		
 		DoctorHomePage dhP = new DoctorHomePage(driver);
 		dhP.getAppointmentBtn().click();

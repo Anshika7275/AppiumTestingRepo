@@ -39,6 +39,20 @@ public class DoctorHomePage extends BaseClassUtility {
 		return appointmentBtn;
 	}
 	
+	@AndroidFindBy(id = "com.example.ayurveda:id/userProfileNavbtn")
+	private WebElement profileNav;
+	
+	@AndroidFindBy(id = "com.example.ayurveda:id/doclogoutbtn")
+	private WebElement docLogoutBtn;
+	
+	public WebElement getProfileNav() {
+		return profileNav;
+	}
+
+	public WebElement getDocLogoutBtn() {
+		return docLogoutBtn;
+	}
+	
 	
 			
 }

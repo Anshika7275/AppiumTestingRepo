@@ -1,4 +1,4 @@
-package com.healthCare.arogyaTest;
+package com.healthCare.arogya.patientTest;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
