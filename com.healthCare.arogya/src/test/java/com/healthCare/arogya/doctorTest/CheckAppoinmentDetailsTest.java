@@ -1,16 +1,14 @@
 package com.healthCare.arogya.doctorTest;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.healthCare.arogya.genericUtility.BaseClassUtility;
 import com.healthCare.arogya.objectRepository.AppoinmentPage;
-import com.healthCare.arogya.objectRepository.CompletedPage;
 import com.healthCare.arogya.objectRepository.DoctorHomePage;
 
 import io.appium.java_client.AppiumBy;
 
-public class Test extends BaseClassUtility{
+public class CheckAppoinmentDetailsTest extends BaseClassUtility{
 	
 	@Test
 	public void checkAppoinmentTest() throws Throwable
@@ -26,7 +24,7 @@ public class Test extends BaseClassUtility{
 		AppoinmentPage ap = new AppoinmentPage(driver);
 		ap.getAppinmentLInk().click();
 		
-		driver.findElement(AppiumBy.androidUIAutomator(new UiScrollable(new UiSelector()).scrollIntoView(text("\++\"))))
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"india\"));"));
 		
 //		ap.getCardNoTxt().sendKeys(cardNo);
 //		ap.getMedicationTxt().sendKeys(medication);
