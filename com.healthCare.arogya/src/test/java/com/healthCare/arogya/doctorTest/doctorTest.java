@@ -10,7 +10,7 @@ import com.healthCare.arogya.objectRepository.DoctorHomePage;
 
 import io.appium.java_client.AppiumBy;
 
-public class Test extends BaseClassUtility{
+public class doctorTest extends BaseClassUtility{
 	
 	@Test
 	public void checkAppoinmentTest() throws Throwable
@@ -26,7 +26,7 @@ public class Test extends BaseClassUtility{
 		AppoinmentPage ap = new AppoinmentPage(driver);
 		ap.getAppinmentLInk().click();
 		
-		driver.findElement(AppiumBy.androidUIAutomator(new UiScrollable(new UiSelector()).scrollIntoView(text("\++\"))))
+		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text())"));
 		
 //		ap.getCardNoTxt().sendKeys(cardNo);
 //		ap.getMedicationTxt().sendKeys(medication);
